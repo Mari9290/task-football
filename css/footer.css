@@ -1,0 +1,13 @@
+.footer {
+    height: 9vh;
+    background-color: #d7e1c8;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.footer__par {
+    font-family: Play-Bold;
+    font-size: calc(1rem + 3vw);
+    color: #888b83;
+}

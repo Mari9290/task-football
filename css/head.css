@@ -1,0 +1,22 @@
+.head {
+    height: 13vh;
+    background-color: #f4f7f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1vh;
+}
+
+.head__wrap {
+    height: 12vh;
+    width: 12vw;
+}
+
+.head__logo {
+    width: 100%;
+}
+
+.head__header {
+    font-family: "Play";
+    font-size: calc(1rem + 4vw);
+}
