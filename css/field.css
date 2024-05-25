@@ -1,3 +1,32 @@
 .field {
     height: 78vh;
 }
+
+.field__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.field__item {
+    width: 30vw;
+    height: 31vh;
+    background-color: #accd84;
+}
+
+
+/* 2000 = 100%
+609 = x
+52 = gap
+x = 30
+gap = 2,6
+
+1110 = 100%
+350 = q
+60 = w
+
+q = 31
+w = 5
+
+*/
