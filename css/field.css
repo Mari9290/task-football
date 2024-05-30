@@ -5,14 +5,67 @@
 .field__list {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 78vh;
     flex-wrap: wrap;
     gap: 2vw;
 }
 
 .field__item {
-    width: 30vw;
-    height: 31vh;
+    width: 29vw;
+    height: 30vh;
     background-color: #accd84;
+    border: 0.5vh solid #a0be74;
+    position: relative;
+}
+
+.field__item:nth-child(1) {
+    background-color: #ecd495;
+    border: 0.5vh solid #f2ca7b;
+}
+
+.field__caption {
+    color: #508d49;
+    font-family: Play-Bold;
+    font-size: calc(1rem + 0.5vh);
+    position: absolute;
+    top: -15%;
+    right: 50%;
+}
+
+.field__number {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    color: rgba(225, 225, 225, 0.5);
+    font-family: Play-Bold;
+    font-size: calc(1rem + 25vh);
+    z-index: 0;
+}
+
+.field__item:nth-child(2) {
+    background-color: #ecd495;
+    border: 0.5vh solid #f2ca7b;
+}
+
+.field__gates-left {
+    height: 5vh;
+    width: 1vw;
+    background-color: #accd84;
+    border: 0.5vh solid #a0be74;
+    position: absolute;
+    left: -4%;
+    top: 40%;
+}
+
+.field__gates-right {
+    height: 5vh;
+    width: 1vw;
+    background-color: #accd84;
+    border: 0.5vh solid #a0be74;
+    position: absolute;
+    right: -4%;
+    top: 40%;
 }
 
 
