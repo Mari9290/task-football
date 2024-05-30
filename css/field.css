@@ -3,12 +3,38 @@
 }
 
 .field__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 29vw);
     height: 78vh;
-    flex-wrap: wrap;
-    gap: 2vw;
+    gap: 3vw;
+    align-content: center;
+    justify-content: center;
+    grid-template-areas: "f d b"
+                        "e c a";
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
 }
 
 .field__item {
@@ -19,6 +45,14 @@
     position: relative;
 }
 
+.field__wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
 .field__item:nth-child(1) {
     background-color: #ecd495;
     border: 0.5vh solid #f2ca7b;
@@ -27,16 +61,23 @@
 .field__caption {
     color: #508d49;
     font-family: Play-Bold;
-    font-size: calc(1rem + 0.5vh);
+    font-size: calc(1rem + 2vh);
     position: absolute;
     top: -15%;
-    right: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .field__number {
     position: absolute;
-    top: 0%;
-    left: 35%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
     color: rgba(225, 225, 225, 0.5);
     font-family: Play-Bold;
     font-size: calc(1rem + 25vh);
@@ -54,8 +95,10 @@
     background-color: #accd84;
     border: 0.5vh solid #a0be74;
     position: absolute;
+    margin: auto;
     left: -4%;
-    top: 40%;
+    top: 0;
+    bottom: 0;
 }
 
 .field__gates-right {
@@ -64,22 +107,155 @@
     background-color: #accd84;
     border: 0.5vh solid #a0be74;
     position: absolute;
+    margin: auto;
+    margin: auto;
     right: -4%;
-    top: 40%;
+    top: 0;
+    bottom: 0;
 }
 
+.field__gates-left-yellow {
+    height: 5vh;
+    width: 1vw;
+    background-color: #ecd495;
+    border: 0.5vh solid #f2ca7b;
+    position: absolute;
+    margin: auto;
+    left: -4%;
+    top: 0;
+    bottom: 0;
+}
 
-/* 2000 = 100%
-609 = x
-52 = gap
-x = 30
-gap = 2,6
+.field__gates-right-yellow {
+    height: 5vh;
+    width: 1vw;
+    background-color: #ecd495;
+    border: 0.5vh solid #f2ca7b;
+    position: absolute;
+    margin: auto;
+    right: -4%;
+    top: 0;
+    bottom: 0;
+}
 
-1110 = 100%
-350 = q
-60 = w
+.field__circle {
+    border: 0.5vh solid #a0be74;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 
-q = 31
-w = 5
+.field__circle-yellow {
+    border: 0.5vh solid #f2ca7b;
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
 
-*/
+.field__line {
+    border: 0.25vh solid #a0be74;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.field__line-yellow {
+    border: 0.25vh solid #f2ca7b;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.field__circle-left {
+    border: 0.5vh solid #a0be74;
+    width: 10em;
+    height: 15em;
+    border-radius: 40%;
+    position: absolute;
+    margin: auto;
+    left: -10%;
+    top: 0;
+    bottom: 0;
+}
+
+.field__circle-left-yellow {
+    border: 0.5vh solid #f2ca7b;
+    width: 10em;
+    height: 15em;
+    border-radius: 40%;
+    position: absolute;
+    margin: auto;
+    left: -10%;
+    top: 0;
+    bottom: 0;
+}
+
+.field__circle-right {
+    border: 0.5vh solid #a0be74;
+    width: 10em;
+    height: 15em;
+    border-radius: 40%;
+    position: absolute;
+    margin: auto;
+    right: -10%;
+    top: 0;
+    bottom: 0;
+}
+
+.field__circle-right-yellow {
+    border: 0.5vh solid #f2ca7b;
+    width: 10em;
+    height: 15em;
+    border-radius: 40%;
+    position: absolute;
+    margin: auto;
+    right: -10%;
+    top: 0;
+    bottom: 0;
+}
+
+.field__head {
+    color: #bd3f62;
+    font-size: calc(1rem + 1vh);
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 1px #fff;
+    padding: 2vh 0 0 2vw;
+}
+
+.field__header {
+    color: #4f8143;
+    font-size: calc(1rem + 1vh);
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 1px #fff;
+    padding: 2vh 0 0 2vw;
+}
+
+.field__par {
+    font-size: calc(1rem + 1vh);
+    color: #000000;
+    font-weight: bold;
+    overflow-wrap: break-word;
+    padding: 0 0 0 10vw;
+    display: inline-block;
+}
+

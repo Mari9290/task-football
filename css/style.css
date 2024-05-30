@@ -32,15 +32,7 @@ box-sizing: inherit;
 }
 
 body {
-	/* font-size: 1rem;
-	font-weight: normal;
-	line-height: 1.3; */
     background-color: #e3e7d7;
-    /* background-color: #F5F5F5;
-    font-family: Ubuntu, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000; */
     position: relative;
     overflow-x: hidden;
     min-width: 320px;
@@ -63,18 +55,6 @@ svg {
     max-height: 100%;
 }
 
-button {
-    padding: 0;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -84,31 +64,6 @@ ul {
 h1,
 h2,
 h3,
-p,
-figure,
-fieldset {
+p {
     margin: 0;
 }
-
-iframe {
-    border: none;
-}
-
-/* .container {
-    max-width: 1440px;
-    padding: 0 30px;
-    margin: 0 auto;
-}
-
-section, aside {
-    padding: 50px 0;
-} */
-
-/* 
-@media (max-width: 320px) {
-    .btn {
-        font-size: 12px;
-    }
-
-} */
-
